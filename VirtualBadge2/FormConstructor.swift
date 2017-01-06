@@ -90,7 +90,6 @@ class FormConstructorController: FormViewController {
         
         present(alertController, animated: true, completion: nil)
         
-        print(valuesDictionary)
     }
     
     override func viewDidLoad() {
@@ -135,15 +134,6 @@ class FormConstructorController: FormViewController {
                             
                             formMapper(form: formsection, forms: formObject)
                         }
-                        
-                        for (key, value) in dictionary {
-                            //       print(key, value)
-                            // access all key / value pairs in dictionary
-                        }
-                        //
-                        //if let nestedDictionary = dictionary["anotherKey"] as? [String: Any] {
-                        //                                        // access nested dictionary values by key
-                        //                                    }
                     }
                 }
             }

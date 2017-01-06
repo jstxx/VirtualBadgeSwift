@@ -65,12 +65,10 @@ class MasterFormViewController: UIViewController, UITableViewDelegate, UITableVi
                     //  let theData = json[0]
                     for theData in json {
                         if let formProps = Form(json: theData as! Gloss.JSON) {
-                         //   print("YOLO", formProps)
                             
                             self.AllForms.append(formProps)
                             // Override the items array with the fetched data
-                            //          self.items.append(formProps.name! + " - " + formProps.displayName!)
-                            
+
                             if let nameArray = formProps.name {
                                 
                                 if let name = nameArray as? String {
@@ -89,18 +87,7 @@ class MasterFormViewController: UIViewController, UITableViewDelegate, UITableVi
                                             let fieldLabel = dictionary["label"] as? String  {
                                             // access individual value in dictionary
                                             self.valueToPass = fieldType
-                                            print("FORMTYPE",fieldType)
                                         }
-                                        
-                                        for (key, value) in dictionary {
-                                            
-                                            print(key, value)
-                                            // access all key / value pairs in dictionary
-                                        }
-                                        //
-                                        //                                    if let nestedDictionary = dictionary["anotherKey"] as? [String: Any] {
-                                        //                                        // access nested dictionary values by key
-                                        //                                    }
                                     }
                                 }
                             }
@@ -173,10 +160,7 @@ class MasterFormViewController: UIViewController, UITableViewDelegate, UITableVi
         
         let indexPath = tableView.indexPathForSelectedRow!
         let currentCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
-        
-        //   valueToPass = currentCell.textLabel?.text
-        
-        
+
         self.performSegue(withIdentifier: "formdetail", sender: self);
         
         print(indexPath)

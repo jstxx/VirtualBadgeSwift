@@ -41,14 +41,9 @@ class BadgeController: EZSwipeController {
             }
         }
     }
-    
-   
-    
-    
-        
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("loaded view")
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,13 +85,10 @@ extension BadgeController: EZSwipeControllerDataSource {
     func viewControllerData() -> [UIViewController] {
         
         let redVC = BadgeView.instantiate()
-       // redVC.view.backgroundColor = UIColor.red
         
         let blueVC = MasterFormViewController.instantiate()
-    //    blueVC.view.backgroundColor = UIColor.blue
         
         let greenVC = UIViewController()
-     //   greenVC.view.backgroundColor = UIColor.green
         
         return [redVC, blueVC, greenVC]
     }

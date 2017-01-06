@@ -12,12 +12,10 @@ struct FormContainer: Glossy {
     let formss: [Form]?
     
     let forms: [AnyObject]?
-
     
     // introduce JSON array initializer that creates JSON with a custom key
     init?(jsonArray: [AnyObject]) {
         let jsonDictionary = ["forms" : jsonArray]
-        
         self.init(json: jsonDictionary)
     }
 
@@ -25,28 +23,16 @@ struct FormContainer: Glossy {
     init?(json: JSON) {
         
         guard let forms: [AnyObject] = "forms" <~~ json else {
-            print("urls are nil")
             return nil
         }
         
         self.forms = forms
-        
         
         if let itemsArray: [JSON] = "forms" <~~ json {
             formss = [Form].from(jsonArray: itemsArray)
         } else {
             formss = nil
         }
-        
-        
-        print("do we have the forms", formss)
-     //   print("zeURLS",forms)
-        
-//        if let itemsArray: [JSON] = "" <~~ json {
-//            forms = [Form].from(jsonArray: itemsArray)
-//        } else {
-//            forms = nil
-//        }
     }
     
     func toJSON() -> JSON? {

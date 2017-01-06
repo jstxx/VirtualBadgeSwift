@@ -50,10 +50,6 @@ class LoginViewController: UIViewController {
             // Cache the token separately for easier programmatic invalidation
             if let token = AccountOwner.token {
                 self.cache.add("token", object: token)
-                print("************************",token,"************************")
-                
-           //     self.doInitialFormGrab(cachedToken: token)
-                
                 self.viewInstantiator(identifier:BadgeController())
             }
         }

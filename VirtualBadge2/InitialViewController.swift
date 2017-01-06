@@ -27,9 +27,8 @@ class InitialViewController: UIViewController {
         
         cache.object("token") { (token: String?) in
             if token != nil {
-                print("have token")
                 DispatchQueue.main.async {
-                     self.viewInstantiator(identifier:BadgeController())
+                    self.viewInstantiator(identifier:BadgeController())
                 }
                 return
             }
