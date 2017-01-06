@@ -1,1 +1,7 @@
-Nothing To See Here.
+Download and unzip
+Use CocoaPods to install dependencies and do a 
+
+    pod install
+
+Uses Swift3
+
