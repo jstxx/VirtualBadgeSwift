@@ -1,0 +1,6 @@
+framework module Pods_VirtualBadge2 {
+  umbrella header "Pods-VirtualBadge2-umbrella.h"
+
+  export *
+  module * { export * }
+}

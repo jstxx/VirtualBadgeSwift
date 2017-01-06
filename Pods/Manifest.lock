@@ -1,0 +1,24 @@
+PODS:
+  - Cache (2.1.1):
+    - CryptoSwift
+  - CryptoSwift (0.6.6)
+  - Eureka (2.0.0-beta.1)
+  - EZSwipeController (0.6.1)
+  - Gloss (1.1.1)
+
+DEPENDENCIES:
+  - Cache
+  - Eureka (~> 2.0.0-beta.1)
+  - EZSwipeController
+  - Gloss (~> 1.1)
+
+SPEC CHECKSUMS:
+  Cache: 525a292370641881d7e350f0d451fd276790243a
+  CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
+  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
+  EZSwipeController: 255b0f8aed31963b0236802c926e27dd006a2532
+  Gloss: 4a892694cba7387efa4102a51f86110651366b18
+
+PODFILE CHECKSUM: 1177c24ed47d6691692183e9e57994b58defa9f3
+
+COCOAPODS: 1.1.1
