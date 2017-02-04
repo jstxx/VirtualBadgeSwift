@@ -8,7 +8,7 @@ Uses Swift3
 The payload returned upon successful login looks like this:
 
 
-```
+```javascript
 {
     employee = {
         badge = {
@@ -121,25 +121,46 @@ The payload returned upon successful login looks like this:
             "altitude_accuracy" = "<null>";
             city = "<null>";
             "created_at" = "2016-06-13T20:15:52.631Z";
-            "employee_id" = 6;
-            heading = "281.6";
-            id = 2434;
-            "is_moving" = 0;
-            latitude = "37.33368006";
-            longitude = "-122.07665613";
-            "recorded_at" = "2016-06-13T20:15:52.248Z";
-            speed = "31.92";
-            "updated_at" = "2016-06-13T20:15:52.631Z";
+                "employee_id" = 6;
+                heading = "281.6";
+                id = 2434;
+                "is_moving" = 0;
+                latitude = "37.33368006";
+                longitude = "-122.07665613";
+                "recorded_at" = "2016-06-13T20:15:52.248Z";
+                speed = "31.92";
+                "updated_at" = "2016-06-13T20:15:52.631Z";
+                "user_id" = 9;
+            };
+            "location_id" = 2434;
+            "marker_color" = yellow;
+            metafields =         (
+            );
+            offline = 1;
+            role = worker;
+            "team_id" = 1;
+            user =         {
+                "accepted_eula" = 0;
+                age = "<null>";
+                "avatar_url" = "";
+                "created_at" = "2016-03-09T16:24:30.676Z";
+                "display_name" = "TC Badge 1";
+                email = "tcbadge1@pathfinders.cc";
+                "first_name" = TC;
+                gender = "<null>";
+                id = 9;
+                "last_name" = "Badge 1";
+                "location_id" = 2434;
+                "logged_in" = 0;
+                "middle_name" = "<null>";
+                phone = "<null>";
+                "thumb_avatar_url" = "";
+                "updated_at" = "2016-07-06T19:33:45.285Z";
+            };
             "user_id" = 9;
         };
-        "location_id" = 2434;
-        "marker_color" = yellow;
-        metafields =         (
-        );
-        offline = 1;
-        role = worker;
-        "team_id" = 1;
-        user =         {
+        token = "sT9f9Jt84_9gCs-c289H";
+        user =     {
             "accepted_eula" = 0;
             age = "<null>";
             "avatar_url" = "";
@@ -157,26 +178,5 @@ The payload returned upon successful login looks like this:
             "thumb_avatar_url" = "";
             "updated_at" = "2016-07-06T19:33:45.285Z";
         };
-        "user_id" = 9;
-    };
-    token = "sT9f9Jt84_9gCs-c289H";
-    user =     {
-        "accepted_eula" = 0;
-        age = "<null>";
-        "avatar_url" = "";
-        "created_at" = "2016-03-09T16:24:30.676Z";
-        "display_name" = "TC Badge 1";
-        email = "tcbadge1@pathfinders.cc";
-        "first_name" = TC;
-        gender = "<null>";
-        id = 9;
-        "last_name" = "Badge 1";
-        "location_id" = 2434;
-        "logged_in" = 0;
-        "middle_name" = "<null>";
-        phone = "<null>";
-        "thumb_avatar_url" = "";
-        "updated_at" = "2016-07-06T19:33:45.285Z";
-    };
-}
+    }
 ```
