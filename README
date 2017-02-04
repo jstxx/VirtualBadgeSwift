@@ -6,8 +6,7 @@ Use CocoaPods to install dependencies and do a
 Uses Swift3
 
 The payload returned upon successful login looks like this:
-
-``` javascript
+```
 {
     employee = {
         badge = {
