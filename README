@@ -7,7 +7,7 @@ Uses Swift3
 
 The payload returned upon successful login looks like this:
 
-``` json
+``` javascript
 {
     employee = {
         badge = {
